@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jawaban no.2</title>
+</head>
+<body>
+
+    <div id="isi" class="content"></div>
+    <img id="poto" height="150" width="150">
+
+    <script type="text/javascript">
+
+        const content = document.getElementById("isi");
+
+        const motto = document.createElement("h1");
+        motto.textContent = "Selamat Ujian Framework JS";
+        content.appendChild(motto);
+
+        const nama = document.createElement("p");
+        nama.textContent = "Nama : Yusroaini";
+        content.appendChild(nama);
+
+        const nim = document.createElement("p");
+        nim.textContent = "NIM : SI17200050";
+        content.appendChild(nim);
+
+        const jurusan = document.createElement("p");
+        jurusan.textContent = "Jurusan: Sistem Informasi";
+        content.appendChild(jurusan);
+
+        const tanggal = document.createElement("p");
+        tanggal.textContent = "Tanggal Ujian : Jumat, 11 November 2022";
+        content.appendChild(tanggal);
+
+        const gambar = document.getElementById("poto");
+        const src = document.createAttribute("src");
+        src.value = "1.jpeg";
+        gambar.setAttributeNode(src);
+
+    </script>
+    
+</body>
+</html>
